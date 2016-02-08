@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApi", "src\WebApi\WebApi.xproj", "{1D3D922F-CF18-49C9-A067-6599BFE10A46}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EmptyProject", "src\EmptyProject\EmptyProject.xproj", "{21EC0C7D-DB72-4343-BE83-7E2E274B2114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{1D3D922F-CF18-49C9-A067-6599BFE10A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D3D922F-CF18-49C9-A067-6599BFE10A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D3D922F-CF18-49C9-A067-6599BFE10A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21EC0C7D-DB72-4343-BE83-7E2E274B2114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EC0C7D-DB72-4343-BE83-7E2E274B2114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EC0C7D-DB72-4343-BE83-7E2E274B2114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21EC0C7D-DB72-4343-BE83-7E2E274B2114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1D3D922F-CF18-49C9-A067-6599BFE10A46} = {B59000F9-16B6-48A2-9F77-A84C01F7421A}
+		{21EC0C7D-DB72-4343-BE83-7E2E274B2114} = {B59000F9-16B6-48A2-9F77-A84C01F7421A}
 	EndGlobalSection
 EndGlobal

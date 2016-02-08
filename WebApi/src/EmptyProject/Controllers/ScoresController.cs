@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
-using WebApi.Models;
+using EmptyProject.Models;
 
-namespace WebApi.Controllers
+// For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace EmptyProject.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ScoresController : Controller
     {
         static List<ScoreEntity> scores;
-        public List<ScoreEntity> Scores {
-            get {
+        public List<ScoreEntity> Scores
+        {
+            get
+            {
                 return scores ?? (scores = new List<ScoreEntity>());
             }
         }
-
-
 
         // GET: api/values
         [HttpGet]
         public IEnumerable<ScoreEntity> Get()
         {
             return Scores;
-            //return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
@@ -36,10 +37,9 @@ namespace WebApi.Controllers
 
         // POST api/values
         [HttpPost]
-        public HttpStatusCodeResult Post([FromBody]ScoreEntity value)
+        public void Post([FromBody]ScoreEntity value)
         {
             Scores.Add(value);
-            return new HttpStatusCodeResult(200);
         }
 
         // PUT api/values/5
